@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <action
+        android:id="@+id/global_action_nav_home"
+        app:destination="@id/nav_home"
+        app:enterAnim="@anim/layout_animation_fadein"
+        app:exitAnim="@anim/layout_animation_fadeout"
+        app:popUpTo='@+id/nav_home'
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/global_action_nav_directory"
+        app:destination="@id/nav_directory"
+        app:enterAnim="@anim/layout_animation_fadein"
+        app:exitAnim="@anim/layout_animation_fadeout"
+        app:popUpTo='@+id/nav_home' />
+    <action
+        android:id="@+id/global_action_to_nav_ftp"
+        app:destination="@id/nav_ftp"
+        app:enterAnim="@anim/layout_animation_fadein"
+        app:exitAnim="@anim/layout_animation_fadeout"
+        app:popUpTo='@+id/nav_home' />
+    <action
+        android:id="@+id/global_action_nav_preferences"
+        app:destination="@id/nav_preferences"
+        app:enterAnim="@anim/layout_animation_fadein"
+        app:exitAnim="@anim/layout_animation_fadeout"
+        app:popUpTo='@+id/nav_home' />
+    <action
+        android:id="@+id/global_action_nav_info"
+        app:destination="@id/nav_info"
+        app:enterAnim="@anim/layout_animation_fadein"
+        app:exitAnim="@anim/layout_animation_fadeout"
+        app:popUpTo='@+id/nav_home' />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.erman.usurf.home.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_directory"
+        android:name="com.erman.usurf.directory.ui.DirectoryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_directory" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.erman.usurf.credit.Credits"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_information" />
+
+    <fragment
+        android:id="@+id/nav_ftp"
+        android:name="com.erman.usurf.ftp.ui.FTPFragment"
+        android:label="@string/menu_ftp"
+        tools:layout="@layout/fragment_ftp" />
+
+    <fragment
+        android:id="@+id/nav_preferences"
+        android:name="com.erman.usurf.preference.ui.MainPreferencesFragment"
+        android:label="@string/menu_preferences" />
+
+</navigation>

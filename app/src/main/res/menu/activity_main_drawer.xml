@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_directory"
+            android:icon="@drawable/ic_hdd"
+            android:visible="false"
+            android:title="" />
+        <item
+            android:id="@+id/nav_ftp"
+            android:icon="@drawable/ic_ftp"
+            android:title="@string/menu_ftp" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_preferences"
+            android:title="@string/menu_preferences" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_info" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/storage"/>
+</menu>
