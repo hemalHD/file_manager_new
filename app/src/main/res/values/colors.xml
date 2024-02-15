@@ -8,4 +8,7 @@
     <color name="textColorDark">#ffffff</color>
     <color name="daynnightTextColor">#3c3c3c</color>
     <color name="separatorColor">#ABB2B9</color>
+    <color name="brown">#781818</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

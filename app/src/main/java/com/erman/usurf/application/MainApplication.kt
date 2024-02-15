@@ -48,7 +48,7 @@ class MainApplication : MultiDexApplication() {
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             @SuppressLint("SourceLockedOrientationActivity")
             override fun onActivityCreated(p0: Activity, p1: Bundle?) {
-                p0.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                p0.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
             }
 
             override fun onActivityStarted(p0: Activity) = Unit

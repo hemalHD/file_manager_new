@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.erman.usurf.R;
+import com.erman.usurf.activity.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
     EditText password;
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (s.toString().length() == 4) {
                     if (password.getText().toString().equalsIgnoreCase("1978")) {
                         finish();
-                        startActivity(new Intent(LoginActivity.this, OpenActivity.class));
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     } else {
                         password.setText("");
                         Toast.makeText(LoginActivity.this, "Please enter proper details.", Toast.LENGTH_SHORT).show();
